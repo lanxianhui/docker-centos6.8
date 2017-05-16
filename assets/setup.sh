@@ -28,6 +28,10 @@ chmod +x /usr/lib64/libudns.so.0 &&
 
 ldconfig &&
 
+mv /assets/tz.php /opt/app/tz.php &&
+chown -R app:app-www /opt/app/tz.php 	&& 
+
+
 
 # Install startup script for container
 #mv /assets/startup.sh /usr/sbin/startup.sh &&
