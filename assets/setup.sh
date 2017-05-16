@@ -6,8 +6,9 @@
 mkdir -p /etc/myserver &&
 mv /assets/myserver.conf /etc/myserver/myserver.conf &&
 
-mv /assets/myserver /etc/init.d/myserver &&
-chmod +x /etc/init.d/myserver &&
+#mv /assets/myserver /etc/init.d/myserver &&
+#chmod +x /etc/init.d/myserver &&
+mv /assets/myserver_start.conf /etc/services-config/supervisor/supervisord.d/myserver_start.conf &&
 
 mv /assets/server /usr/local/bin/server &&
 chmod +x /usr/local/bin/server &&
