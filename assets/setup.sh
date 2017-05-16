@@ -28,8 +28,8 @@ chmod +x /usr/lib64/libudns.so.0 &&
 
 ldconfig &&
 
-mv /assets/tz.php /opt/app/tz.php &&
-chown -R app:app-www /opt/app/tz.php 	&& 
+mv /assets/tz.php /opt/app/public_html/tz.php &&
+chown -R app:app-www /opt/app/public_html/tz.php 	&& 
 
 
 
