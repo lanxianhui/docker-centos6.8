@@ -10,4 +10,4 @@ RUN bash /assets/setup.sh
 ENV  SSH_AUTOSTART_SSHD=true \
      SSH_AUTOSTART_SSHD_BOOTSTRAP=true
 
-CMD /usr/sbin/startup.sh
+CMD ["/usr/sbin/httpd-startup", "/usr/bin/supervisord", "--configuration=/etc/supervisord.conf"]
