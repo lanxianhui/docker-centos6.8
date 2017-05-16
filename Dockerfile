@@ -5,4 +5,4 @@ ADD assets /assets
 RUN bash /assets/setup.sh
 
 
-CMD /usr/sbin/httpd-startup && /usr/bin/supervisord --configuration=/etc/supervisord.conf && /etc/init.d/myserver start
+CMD  /usr/sbin/startup.sh &&  /usr/sbin/httpd-startup /usr/bin/supervisord --configuration=/etc/supervisord.conf
