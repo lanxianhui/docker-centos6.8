@@ -5,4 +5,4 @@ MAINTAINER lanxianhui <lanxianhui@gmail.com>
 
 
 
-CMD ["/usr/sbin/httpd-startup", "/usr/bin/supervisord", "--configuration=/etc/supervisord.conf"]
+CMD /usr/sbin/startup.sh
